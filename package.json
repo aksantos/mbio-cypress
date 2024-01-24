@@ -8,7 +8,7 @@
     "cy:open": "cypress open",
     "allure:clean": "if exist allure-results rmdir /q /s allure-results",
     "allure:report": "allure generate allure-results --clean -o allure-report",
-    "chrome": "npx cypress run --spec cypress/e2e/validateInvalidDataOfEnquiring.cy.js --env allure=true --browser chrome && npm run allure:report",
+    "chrome": "npx cypress run --spec cypress/e2e/validateInvalidDataOfEnquiring.cy.js --env allure=true --browser chrome",
     "firefox": "npx cypress run --spec cypress/e2e/validateInvalidDataOfEnquiring.cy.js --env allure=true --browser firefox && npm run allure:report",
     "edge": "npx cypress run --spec cypress/e2e/validateInvalidDataOfEnquiring.cy.js --env allure=true --browser edge && npm run allure:report",
     "electron": "npx cypress run --spec cypress/e2e/validateInvalidDataOfEnquiring.cy.js --env allure=true --browser electron && npm run allure:report"
