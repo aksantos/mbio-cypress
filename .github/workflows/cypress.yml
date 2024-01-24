@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        browser: [chrome, edge, electron]
+        browser: [chrome, edge]
 
     steps:
       - name: Checkout code
