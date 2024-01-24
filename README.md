@@ -1,31 +1,32 @@
-<h1>
-  <p align="center">  Mercedes-Benz.io Challenge 
-</h1>
-<h2>Task 1 - Manual Testing</h2>
 
-#Task 2 - Automated Testing
 
-<h4>How was the automation done?<br/>
-➡️ Cypress as framework<br/>
-➡️ JavaScript as language<br/>
-➡️ Allure as reporter<br/></h4>
-There are two ways to run the automated tests:<br/>
-The first is to run the command designed for each browser, one at a time.<br/>
-Each time the test runs a test result will be created with allure.<br/>
-To open the allure report -> **allure open**<br/>
+#  Mercedes-Benz.io Challenge 
 
-The details of the car are saved in a JSON file on cypress\documents\
+## Task 1 - Manual Testing
 
-The second way to run is to set up the project with Github Actions creating a pipeline.
+## Task 2 - Automated Testing
 
-<h4>How to Setup?</h4>
+#### How was the automation done?
+#### ➡️ Cypress as framework
+#### ➡️ JavaScript as language
+#### ➡️ Allure as reporter
+There are two ways to run the automated tests:
 
-- Download and Install Node (https://nodejs.org/en/download/)
-- Clone or download this repository
-- Open the folder repository on your code editor
-- using the terminal, install dependencies by running the command: `npm install`
+ - The first is to run the command designed for each browser, one at a time.
+	- Each time the test runs a test result will be created with allure.
+	- To open the allure report -> `allure open`
+	- The details of the car are saved in a `JSON` file on cypress\documents\
 
- <h4>How to run?</h4>
+- The second way to run is to set up the project with Github Actions creating a pipeline.
+
+#### How to Setup?
+
+- Download and Install NodeJS (https://nodejs.org/en/download/)
+- Clone or download the repository
+- Open the repository folder on your code editor
+- In the terminal, install dependencies by running  `npm install`
+
+ #### How to run?
 
 - Run the test with chrome: `npm run chrome`
 
@@ -37,4 +38,5 @@ The second way to run is to set up the project with Github Actions creating a pi
 
 - Open report: `allure open`
 
-<h2>Task 3 - QA-Ops</h2>
+## Task 3 - QA-Ops
+The pipeline was created using GitHub Actions, where it runs whenever there's a push to the master branch and you also can manually run the action in the Actions tab on GitHub.
