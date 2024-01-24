@@ -3,21 +3,20 @@
 </h1>
 <h2>Task 1 - Manual Testing</h2>
 
-<h2>Task 2 - Automated Testing</h2>
+#Task 2 - Automated Testing
 
-<h4>How was the automation done?<h4/>
-- Cypress as framework
-- JavaScript as language
-- Allure as reporter
-
-There are two ways to run the automated tests:
-First is to run the command, in CLI, designed for the browser, one at a time.
-Each time the test runs a test result will be created with allure.
-To open allure report -> `allure open`.
+<h4>How was the automation done?<br/>
+➡️ Cypress as framework<br/>
+➡️ JavaScript as language<br/>
+➡️ Allure as reporter<br/></h4>
+There are two ways to run the automated tests:<br/>
+The first is to run the command designed for each browser, one at a time.<br/>
+Each time the test runs a test result will be created with allure.<br/>
+To open the allure report -> **allure open**<br/>
 
 The details of the car are saved in a JSON file on cypress\documents\
 
-The second way to run, is to setup the project with Github Actions creating a pipeline.
+The second way to run is to set up the project with Github Actions creating a pipeline.
 
 <h4>How to Setup?</h4>
 
@@ -28,13 +27,13 @@ The second way to run, is to setup the project with Github Actions creating a pi
 
  <h4>How to run?</h4>
 
-- Run test with chrome: `npm run cy:chrome`
+- Run the test with chrome: `npm run chrome`
 
-- Run test with firefox: `npm run cy:firefox`
+- Run the test with firefox: `npm run firefox`
 
-- Run test with edge: `npm run cy:edge`
+- Run the test with edge: `npm run edge`
 
-- Run test with electron: `npm run cy:electron`
+- Run the test with electron: `npm run electron`
 
 - Open report: `allure open`
 
