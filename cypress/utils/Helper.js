@@ -25,7 +25,8 @@ class Helper {
       .type(data.postalCode)
       .then((el) => {
         if (cy.get(inputPostalCodeError).contains(data.postalCodeErrorMessage)) {
-          cy.get(inputPostalCode).type('{upArrow}');
+          cy.wait(1000);
+          cy.get(inputPostalCode).type('{upArrow}{upArrow}');
         }
       });
 
