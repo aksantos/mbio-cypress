@@ -21,7 +21,7 @@ There are two ways to run the automated tests:
 - The first is to run the command designed for each browser, one at a time.
   - Each time the test runs a test result will be created with allure.
   - The details of the car are saved in a `JSON` file on cypress\documents\
-- The second way to run is to set up the project with Github Actions creating a pipeline.
+- The second way to run is using the pipeline created with GitHub Actions.
 
 #### To setup:
 
