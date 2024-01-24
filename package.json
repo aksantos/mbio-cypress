@@ -1,0 +1,25 @@
+{
+  "name": "challenge-mercedes-benz.io-cypress",
+  "version": "1.0.0",
+  "description": "Challenge for my dream job",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksantos/challenge-mercedes-benz.io-cypress.git"
+  },
+  "keywords": [],
+  "author": "Arthur Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aksantos/challenge-mercedes-benz.io-cypress/issues"
+  },
+  "homepage": "https://github.com/aksantos/challenge-mercedes-benz.io-cypress#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "@shelex/cypress-allure-plugin": "^2.40.1",
+    "cypress": "^13.6.3"
+  }
+}
