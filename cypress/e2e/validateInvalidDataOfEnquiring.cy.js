@@ -2,9 +2,9 @@ import DetailsPage from '../pages/DetailsPage';
 import MainPage from '../pages/MainPage';
 
 describe('Validate the negative path of enquiring the highest price', () => {
-  Cypress.on('uncaught:exception', () => {
-    return false;
-  });
+  // Cypress.on('uncaught:exception', () => {
+  //   return false;
+  // });
 
   context('steps', () => {
     it('Open Mercedes-benz United Kingdom market', () => {

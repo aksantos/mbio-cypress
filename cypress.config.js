@@ -12,7 +12,5 @@ module.exports = defineConfig({
     viewportHeight: 780,
     includeShadowDom: true,
     testIsolation: false, //prevent blank page
-    chromeWebSecurity: false,
-    firefoxWebSecurity: false,
   },
 });

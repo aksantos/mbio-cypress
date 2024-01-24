@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        browser: [chrome]
+        browser: [chrome, edge, electron]
 
     steps:
       - name: Checkout code
@@ -20,7 +20,7 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
-        
+
       - name: Install dependencies
         run: npm install
 

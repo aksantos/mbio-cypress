@@ -21,15 +21,14 @@ class Helper {
     cy.get(radioPrivate).click({ force: true });
     /* the frontend validation in the postal code input should be fixed because in some test runs
     the value of a correct postal code is being flagged as invalid */
-    cy.get(inputPostalCode)
-      .type(data.postalCode)
-      .then((el) => {
-        if (cy.get(inputPostalCodeError).contains(data.postalCodeErrorMessage)) {
-          cy.wait(1000);
-          cy.get(inputPostalCode).type('{upArrow}{upArrow}');
-        }
-      });
-
+    cy.get(inputPostalCode).type(data.postalCode);
+    // .then((el) => {
+    //   if (cy.get(inputPostalCodeError).contains(data.postalCodeErrorMessage)) {
+    //     cy.wait(1000);
+    //     cy.get(inputPostalCode).type('{upArrow}{upArrow}');
+    //   }
+    // });
+    // the code above could be used as a workaround
     cy.getDataTestId(btnContinue).click();
   }
 
