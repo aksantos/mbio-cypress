@@ -2,7 +2,7 @@
 
 ## Task 1 - Manual Testing
 
-The PDF document containing the results of manual testing can be downloaded from [here](link_to_pdf).
+The PDF document containing the results of manual testing can be downloaded from [here](https://github.com/aksantos/challenge-mercedes-benz.io-cypress/blob/master/TASK_1/challenge-mercedes-benz-io.pdf).
 
 ## Task 2 - Automated Testing
 
