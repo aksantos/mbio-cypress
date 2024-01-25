@@ -2,45 +2,57 @@
 
 ## Task 1 - Manual Testing
 
+The PDF document containing the results of manual testing can be downloaded from [here](link_to_pdf).
+
 ## Task 2 - Automated Testing
 
-This project was created to solve a challenge requested to automate the test case:
+This project addresses the challenge of automating the test case for validating the negative path of inquiring about the highest price at Mercedes-Benz.
 
-- Validate the negative path of enquiring the highest price at Mercedes-Benz
+### Technologies Used:
 
-#### Technologies used:
+- **Cypress as Framework**
+- **JavaScript as Language**
+- **Allure as Reporter**
 
-#### ➡️ Cypress as framework
+### Running Automated Tests:
 
-#### ➡️ JavaScript as language
+There are two methods to execute the automated tests:
 
-#### ➡️ Allure as reporter
+1. **Command Line:**
 
-There are two ways to run the automated tests:
+   - Run the command for each browser individually.
+   - After each test run, an Allure test result is generated.
+   - Car details are saved in a `JSON` file located at `cypress/documents/`.
 
-- The first is to run the command designed for each browser, one at a time.
-  - Each time the test runs a test result will be created with allure.
-  - The details of the car are saved in a `JSON` file on cypress\documents\
-- The second way to run is using the pipeline created with GitHub Actions.
+2. **GitHub Actions Pipeline:**
+   - Utilize the GitHub Actions pipeline for automated testing.
 
-#### To setup:
+### Setup Instructions:
 
-- Download and Install NodeJS (https://nodejs.org/en/download/)
-- Clone or download the repository
-- Open the repository folder on your code editor
-- In the terminal, install dependencies by running `npm install`
+1. **NodeJS Installation:**
 
-#### To run:
+   - Download and Install NodeJS from [here](https://nodejs.org/en/download/).
 
-- Run the test with chrome: `npm run chrome`
-- Run the test with firefox: `npm run firefox`
-- Run the test with edge: `npm run edge`
-- Run the test with electron: `npm run electron`
+2. **Repository Setup:**
+
+   - Clone or download the repository.
+
+3. **Code Editor Setup:**
+
+   - Open the repository folder in your preferred code editor.
+
+4. **Dependency Installation:**
+   - In the terminal, install dependencies by running `npm install`.
+
+### Execution Instructions:
+
+- Run the test with Chrome: `npm run chrome`
+- Run the test with Firefox: `npm run firefox`
+- Run the test with Edge: `npm run edge`
+- Run the test with Electron: `npm run electron`
 - Create an Allure Report: `npm run allure:report`
-- Open report: `allure open`
+- Open the generated report: `allure open`
 
 ## Task 3 - QA-Ops
 
-- A pipeline was created using GitHub Actions, where it runs whenever there's a push to the master branch.
-- It can also be run manually from the Actions tab.
-- The pipeline runs against Chrome and Edge browser
+A GitHub Actions pipeline has been implemented, triggered on every push to the master branch. Additionally, it can be manually executed from the Actions tab. The pipeline runs against both Chrome and Edge browsers.
